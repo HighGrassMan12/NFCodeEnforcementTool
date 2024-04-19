@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Enforcement Violations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Code Enforcement Violations</h1>
+    <form id="violationForm">
+        <label>Date of the Letter: <input type="date" name="letterDate"></label><br>
+        <label>Property Owner Names: <input type="text" name="ownerNames"></label><br>
+        <label>Property Owner Address: <input type="text" name="ownerAddress"></label><br>
+        <label>Property Owner City, State, ZIP: <input type="text" name="ownerCityStateZIP"></label><br>
+        <label>Violation Location Address: <input type="text" name="violationAddress"></label><br>
+        <label>Violation Location City, State, ZIP: <input type="text" name="violationCityStateZIP"></label><br>
+        <label>Violation Location Tax ID: <input type="text" name="taxID"></label><br>
+        <label>Violation Location Address (2): <input type="date" name="violationDate"></label><br>
+        
+        <h2>Select Violations</h2>
+        <label><input type="checkbox" name="noiseViolation"> Noise Violation</label><br>
+        <label><input type="checkbox" name="parkingViolation"> Parking Violation</label><br>
+        <label><input type="checkbox" name="buildingViolation"> Building Code Violation</label><br>
+
+        <button type="submit">Export to Word</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
